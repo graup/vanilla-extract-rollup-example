@@ -1,0 +1,23 @@
+import { Meta } from '@storybook/addon-docs';
+
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+
+<Meta title="Intro" />
+
+# Welcome
+
+This is a sample SCSS code block example highlighted in Storybook
+
+```scss
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+
+export const Component = () => {
+  return <SyntaxHighlighter />;
+};

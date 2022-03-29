@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-extract-rollup-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^1.1.4"
+  },
+  "packageManager": "yarn@1.22.17"
+}

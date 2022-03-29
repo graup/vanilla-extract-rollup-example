@@ -1,0 +1,32 @@
+{
+  "name": "@vanilla-extract-rollup-example/example-nextjs",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3101",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint './**/*.{ts,tsx}'",
+    "test": "tsc && jest"
+  },
+  "dependencies": {
+    "@vanilla-extract-rollup-example/ui": "*",
+    "@vanilla-extract/css": "^1.6.3",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@vanilla-extract-rollup-example/eslint-config": "*",
+    "@vanilla-extract-rollup-example/tsconfig": "*",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@vanilla-extract/babel-plugin": "^1.1.4",
+    "@vanilla-extract/next-plugin": "^2.0.1",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.0.0"
+  }
+}

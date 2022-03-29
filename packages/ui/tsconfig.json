@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+    "declarationDir": "dist"
+  },
+  "extends": "@vanilla-extract-rollup-example/tsconfig/react-library.json",
+  "include": ["src"]
+}

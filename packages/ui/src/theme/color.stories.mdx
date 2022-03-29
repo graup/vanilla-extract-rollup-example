@@ -1,0 +1,44 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Box, Typography } from '../foundation';
+import { colorWeightMap } from './color-util';
+
+<Meta title="Foundation/Color" />
+
+export const Template = () => {
+  return Object.entries(colorWeightMap).map(([color, weights]) => {
+    weights.sort();
+    return (
+      <Box mt={4}>
+        <Typography variant="headline4">{color}</Typography>
+        <Box
+          my={4}
+          display="grid"
+          style={{
+            gridTemplateColumns: `repeat(auto-fill, minmax(100px, 1fr))`,
+          }}
+        >
+          {weights.map((weight) => {
+            return (
+              <Box>
+                <Box
+                  backgroundColor={`${color}-${weight}`}
+                  p={2}
+                  aspectRatio="1"
+                >
+                  {weight}
+                </Box>
+                <Typography variant="body4">
+                  {color}-{weight}
+                </Typography>
+              </Box>
+            );
+          })}
+        </Box>
+      </Box>
+    );
+  });
+};
+
+# Color Palette
+
+<Story name="All colors">{Template.bind({})}</Story>

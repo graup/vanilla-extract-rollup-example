@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo"
+  },
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+  "extends": "@vanilla-extract-rollup-example/tsconfig/nextjs.json",
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+}
