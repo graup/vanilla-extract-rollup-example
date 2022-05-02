@@ -2,7 +2,7 @@
 
 This is an example for
 
-- a component library using Vanilla Extract (and its [Rollup Plugin](https://vanilla-extract.style/documentation/setup/#rollup)
+- a component library using Vanilla Extract (built using the [Rollup Plugin](https://vanilla-extract.style/documentation/setup/#rollup))
 - two example apps consuming the component library (Vite and Next.js)
 
 ## Setup
@@ -13,4 +13,6 @@ This is an example for
 
     yarn dev
 
-This uses turborepo to first build the UI packages and then launch the two example apps.
+This uses Turborepo to first build the UI package and then launch the two example apps.
+
+You can also run build / dev commands in their respective directories manually without using Turborepo.
