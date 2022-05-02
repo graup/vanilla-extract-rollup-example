@@ -16,9 +16,6 @@
     "dev": {
       "dependsOn": ["^build"],
       "cache": false
-    },
-    "storybook": {
-      "cache": false
     }
   }
 }
