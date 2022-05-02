@@ -27,13 +27,17 @@ export default [
         format: 'esm',
         preserveModules: true,
         preserveModulesRoot: 'src',
+
+        // Change .css.js files to something else so that they don't get re-processed by consumer's setup
         entryFileNames({ name }) {
           return `${name.replace(/\.css$/, '.css.vanilla')}.js`;
         },
+
+        // Apply preserveModulesRoot to asset names
         assetFileNames({ name }) {
-          // Apply preserveModulesRoot to asset names
           return name.replace(/^src\//, '');
         },
+
         exports: 'named',
       },
     ],
