@@ -1,3 +1,4 @@
+import { vars } from '@vanilla-extract-rollup-example/ui';
 import { style } from '@vanilla-extract/css';
 
 export const pageContainer = style({
@@ -15,6 +16,6 @@ export const usageGrid = style([
   {
     gridTemplateColumns: '1fr 1fr 1fr',
     display: 'grid',
-    gap: '24px',
+    gap: vars.space.large,
   },
 ]);
